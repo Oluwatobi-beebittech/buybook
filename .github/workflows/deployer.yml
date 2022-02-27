@@ -11,11 +11,6 @@ jobs:
       if: github.event.pull_request.merged == true
       steps:
         - uses: actions/checkout@v2
-        - name: Set Env Vars on Vercel Project
-          uses: dkershner6/vercel-set-env-action@v1
-          with:
-            token: ${{ secrets.BUYBOOK_VERCEL }}
-            projectName: buybook
         - name: deploy site to vercel      
           uses: amondnet/vercel-action@v20
           with:
