@@ -5,6 +5,6 @@ be
 - bought through the peer-to-peer network
 - rented out to vetted users
 
-##Tech Stack
+## Tech Stack
 - Frontend - Next.js
 - Backend - Laravel
