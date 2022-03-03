@@ -5,11 +5,24 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "prefer-const": "error",
+    "@typescript-eslint/padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": ["const", "let"],
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": ["function", "if", "try"],
+        "next": "*"
+      }
+    ],
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "error",
-    "no-unused-vars": "off",
-    "no-duplicate-imports": "off",
+    "@typescript-eslint/no-unused-expressions": ["error"],
+    "@typescript-eslint/indent": ["error", "tab"],
+    "curly": ["error", "multi", "consistent"],
     "import/order": 
     [
       "error",
@@ -33,8 +46,36 @@
       }
     ],
     "import/no-default-export": "error",
+    "import/no-mutable-exports": "error",
     "import/no-duplicates": "error",
-    "indent": "off"
-
+    "indent": "off",
+    "max-lines": [
+      "error", 
+      {
+        "max": 120,
+        "skipComments": true
+      }
+    ],
+    "max-len": [
+      "error", 
+      { 
+        "code": 120, 
+        "comments": 65, 
+        "ignoreUrls": true , 
+        "ignoreStrings": true, 
+        "ignoreTemplateLiterals": true  
+      }
+    ],
+    "no-duplicate-imports": "off",
+    "no-shadow": "error",
+    "no-nested-ternary": "error",
+    "no-unused-vars": "off",
+    "no-use-before-define": "error",
+    "no-redeclare": "error",
+    "no-var": "error",
+    "no-trailing-spaces": "error",
+    "padding-line-between-statements": "off",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error"
   }
 }
