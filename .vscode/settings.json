@@ -1,0 +1,39 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+    
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+    ],
+    "yaml.schemas": {
+        "file:///Users/oluwatobiakanji/.vscode/extensions/atlassian.atlascode-2.10.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.jqlList": [
+        {
+            "id": "a52dd9e3-3669-4018-95a4-b197ded3a034",
+            "enabled": true,
+            "name": "My 542digital Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "45a27c00-bc9c-4362-960e-6acade3cc34c",
+            "monitor": true
+        }
+    ],
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "redhat.telemetry.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+      
+}

@@ -1,8 +1,7 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
   "plugins": [
-    "@typescript-eslint", 
-    "plugin:@typescript-eslint/recommended"
+    "@typescript-eslint"
   ],
   "rules": {
     "@typescript-eslint/padding-line-between-statements": [
@@ -22,6 +21,8 @@
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-unused-expressions": ["error"],
     "@typescript-eslint/indent": ["error", "tab"],
+    "array-bracket-spacing": ["error", "always"],
+    "brace-style": "error",
     "curly": ["error", "multi", "consistent"],
     "import/order": 
     [
@@ -32,20 +33,19 @@
           "builtin",
           "external",
           "internal",
-          ["parent", "sibling"],
           "type",
+          ["parent", "sibling"],
           "index", 
           "object"
         ],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
-          "caseInsensitive": "true"
+          "caseInsensitive": true
         },
-        "warnOnUnassignedImports": "true"
+        "warnOnUnassignedImports": true
       }
     ],
-    "import/no-default-export": "error",
     "import/no-mutable-exports": "error",
     "import/no-duplicates": "error",
     "indent": "off",
@@ -74,8 +74,10 @@
     "no-redeclare": "error",
     "no-var": "error",
     "no-trailing-spaces": "error",
+    "object-curly-spacing": ["error", "always"],
     "padding-line-between-statements": "off",
     "prefer-arrow-callback": "error",
-    "prefer-const": "error"
+    "prefer-const": "error",
+    "semi": ["error", "always"]
   }
 }
