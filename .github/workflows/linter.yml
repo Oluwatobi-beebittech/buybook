@@ -29,6 +29,4 @@ jobs:
       VALIDATE_BASH_EXEC: false
       VALIDATE_SHELL_SHFMT: false
       VALIDATE_CSS: false
-      VALIDATE_TSX: true
       VALIDATE_YAML: false
-      VALIDATE_JAVASCRIPT_ES: true
