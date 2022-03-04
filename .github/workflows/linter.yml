@@ -24,18 +24,4 @@ jobs:
       - run: npm ci
 
       - name: Run linter
-        uses: github/super-linter@v4
-    env:
-      DEFAULT_BRANCH: main
-      GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-      VALIDATE_ALL_CODEBASE: false
-      LINTER_RULES_PATH: /
-      JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
-      TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
-      VALIDATE_BASH: false
-      VALIDATE_BASH_EXEC: false
-      VALIDATE_SHELL_SHFMT: false
-      VALIDATE_CSS: false
-      VALIDATE_JSCPD: false
-      VALIDATE_GITLEAKS: false
-      VALIDATE_YAML: false
+        run: npm run lint
