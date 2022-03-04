@@ -29,4 +29,6 @@ jobs:
       VALIDATE_BASH_EXEC: false
       VALIDATE_SHELL_SHFMT: false
       VALIDATE_CSS: false
+      VALIDATE_JSCPD: false
+      VALIDATE_GITLEAKS: false
       VALIDATE_YAML: false
