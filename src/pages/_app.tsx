@@ -1,7 +1,7 @@
-import type { AppProps } from 'next/app';
+import '@styles/globals.css';
+import '@styles/main.less';
 
-import '../styles/globals.css';
-import '../Styles/main.less ';
+import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return <Component {...pageProps} />;
