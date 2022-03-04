@@ -10,7 +10,8 @@ jobs:
       runs-on: ubuntu-latest
       if: github.event.pull_request.merged == true
       steps:
-        - uses: actions/checkout@v2
+        - name: Checkout code
+          uses: actions/checkout@v2
         - name: deploy site to vercel      
           uses: amondnet/vercel-action@v20
           with:
