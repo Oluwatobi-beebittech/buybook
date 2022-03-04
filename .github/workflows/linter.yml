@@ -18,3 +18,15 @@ jobs:
           fetch-depth: 0
       - name: Run linter
         uses: github/super-linter@v4
+    env:
+      DEFAULT_BRANCH: main
+      LINTER_RULES_PATH: /
+      JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+      TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
+      VALIDATE_BASH: false
+      VALIDATE_BASH_EXEC: false
+      VALIDATE_SHELL_SHFMT: false
+      VALIDATE_CSS: false
+      VALIDATE_TSX: true
+      VALIDATE_YAML: false
+      VALIDATE_JAVASCRIPT_ES: true
