@@ -1,17 +1,38 @@
-name: BuyBook Deploy
+name: BuyBook Workflow
 on:
+  push:
+    branches-ignore:
+      - "main"
   pull_request:
     types:
       - closed
     branches:
       - main
 jobs:
-    vercel: 
+    js-lint:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout Code
+            uses: actions/checkout@v2
+            with:
+              fetch-depth: 0
+
+          - name: Setup node
+            uses: actions/setup-node@v2
+            with:
+              node-version: 16
+          - run: npm ci
+
+          - name: Run linter
+            run: npm run lint
+
+    deploy-vercel: 
       runs-on: ubuntu-latest
       if: github.event.pull_request.merged == true
       steps:
         - name: Checkout code
           uses: actions/checkout@v2
+          
         - name: deploy site to vercel      
           uses: amondnet/vercel-action@v20
           with:
