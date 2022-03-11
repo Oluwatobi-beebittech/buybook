@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import { Navigation } from '@components';
+import { Navigation } from '@Components';
 import styles from '@styles/Home.module.css';
 
 import type { NextPage } from 'next';
@@ -9,7 +9,7 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
 	return (
-		<div className={styles.container}>
+		<>
 			<Navigation/>
 			<Head>
 				<title>Create Next App</title>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
 					</span>
 				</a>
 			</footer>
-		</div>
+		</>
 	);
 };
 
