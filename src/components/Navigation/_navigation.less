@@ -1,15 +1,30 @@
 .nav {
-  padding: 30px;
+  padding: 20px 5%;
   background-color: @yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 
-  * {
+  ul {
+    list-style-type: none;
     display: inline;
   }
-  ul {
-    width: 50%;
-    &__link {
-      list-style-type: none;
+
+  &__header {
+    color: @green400;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 1rem;
+    a {
+      color: @green400;
     }
   }
 }
