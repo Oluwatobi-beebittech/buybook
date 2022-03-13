@@ -43,6 +43,6 @@
     "typescript": "4.5.5"
   },
   "lint-staged": {
-    "*.{.ts, .tsx, .jsx, .js}": "eslint --ext .ts,.tsx, .js, .jsx pages/ --fix"
+    "*.{ts, tsx, jsx, js}": "eslint --ext .ts,.tsx, .js, .jsx pages/ --fix"
   }
 }
