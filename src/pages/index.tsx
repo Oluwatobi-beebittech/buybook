@@ -13,7 +13,6 @@ const Home: NextPage = () => {
 		<>
 			<Head>
 				<title>Buy Book</title>
-				<meta name="description" content="Buy Book" />
 				{/* <link rel="icon" href="/favicon.ico" /> */}
 			</Head>
 			<header>
@@ -22,7 +21,8 @@ const Home: NextPage = () => {
 			<main className="landing__content">
 				<Row gutter={[ 14,10 ]}>
 					<Col span={24} md = {18} className="landing__card--large">
-						<Title>Finding a book?</Title>
+						<Title>Read with Ease</Title>
+						<p>Helo</p>
 					</Col>
 					<Col span={24} md={6}>
 						<Space direction="vertical" style={{ width: "100%" }}>
