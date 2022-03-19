@@ -24,6 +24,7 @@
     transition: background-color 0.5s, border 0.5s;
     .anticon {
       color: @pale-white !important;
+      font-size: 3rem;
       transition: color 0.5s;
     }
     &:hover {
@@ -31,6 +32,11 @@
       border: 1px solid @green300;
       .anticon {
         color: @green300 !important;
+      }
+    }
+    @media screen and (max-width: @mobile-breakpoint) {
+      .anticon {
+        font-size: 2rem;
       }
     }
   }
