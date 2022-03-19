@@ -1,6 +1,7 @@
 import { Row, Col, Space, Typography } from 'antd';
 import Head from 'next/head';
 
+import { HandCoinsIcon, ReusedBookIcon } from '@Assets';
 import { Navigation } from '@Components';
 
 import type { TypographyProps } from 'antd';
@@ -19,22 +20,30 @@ const Home: NextPage = () => {
 				<Navigation/>
 			</header>
 			<main className="landing__content">
-				<Row gutter={[ 14,10 ]}>
-					<Col span={24} md = {18} className="landing__card--large">
-						<Title>Read with Ease</Title>
-						<p>Helo</p>
-					</Col>
-					<Col span={24} md={6}>
-						<Space direction="vertical" style={{ width: "100%" }}>
-							<Col className="landing__card--small" span={24}>
-								<Title level={3}>Purchase</Title>
-							</Col>
-							<Col className="landing__card--small" span={24}>
-								<Title level={3}>Rent</Title>
-							</Col>
-						</Space>
-					</Col>
-				</Row>
+				<Space direction="vertical" size='large' style={{ width: '100%' }}>
+					<Row gutter={[ 0,0 ]}>
+						<Col span={24} className="landing__card--large">
+							<Title>Get Books with Ease</Title>
+							<p>Helo</p>
+						</Col>
+					</Row>
+					<Row gutter={[ 20, 20 ]}>
+						<Col span={4} className="landing__card--small">
+							<ReusedBookIcon style={{ fontSize: '3rem' }}/>
+						</Col>
+						<Col span={20} className="">
+							<Title level={2}>Lend a book</Title>
+						</Col>
+					</Row>
+					<Row gutter={[ 20, 20 ]}>
+						<Col span={4} className="landing__card--small">
+							<HandCoinsIcon style={{ fontSize: '3rem' }}/>
+						</Col>
+						<Col span={20} className="">
+							<Title level={2}>Purchase a used copy</Title>
+						</Col>
+					</Row>
+				</Space>
 			</main>
 
 			<footer >
