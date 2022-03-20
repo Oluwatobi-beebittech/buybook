@@ -5,12 +5,22 @@
     padding-top: calc(95px + 1rem);
   }
 
+  &__content-cta:hover {
+    background-color: @white !important;
+    color: @primary-color !important;
+  }
+
   &__card--large {
     border-radius: @border-radius-base;
     margin-bottom: 10vh;
     padding: @padding-lg !important;
     text-align: center;
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: @green500 !important;
     }
   }
@@ -21,19 +31,12 @@
     border-radius: @border-radius-base;
     padding: @padding-md !important;
     text-align: center;
-    transition: background-color 0.5s, border 0.5s;
     .anticon {
       color: @pale-white !important;
       font-size: 3rem;
       transition: color 0.5s;
     }
-    &:hover {
-      background-color: @white;
-      border: 1px solid @green300;
-      .anticon {
-        color: @green300 !important;
-      }
-    }
+  
     @media screen and (max-width: @mobile-breakpoint) {
       .anticon {
         font-size: 2rem;

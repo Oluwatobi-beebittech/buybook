@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 						<Col span={24} className="landing__card--large">
 							<Title>Get Books with Ease</Title>
 							<Paragraph>Discover book lovers and get access to their collection of books.</Paragraph>
-							<Button type="primary" size="large">Explore</Button>
+							<Button type="primary" className="landing__content-cta" size="large">Explore</Button>
 						</Col>
 					</Row>
 					<Row gutter={[ 20, 20 ]}>
