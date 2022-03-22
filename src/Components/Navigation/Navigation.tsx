@@ -11,17 +11,17 @@ export const Navigation: React.FC = (): JSX.Element => {
 			<span className="nav__header">Buy Book</span>
 			<ul className = {`nav__links--${isMenuOpen ? 'opened' : 'closed'}`}>
 				<li className="nav__link">
-					<Link href="/">
+					<Link href="/about">
 						<a>	About</a>
 					</Link>
 				</li>
 				<li className="nav__link">
-					<Link href="/">
+					<Link href="/register">
 				Register
 					</Link>
 				</li>
 				<li className="nav__link">
-					<Link href="/">
+					<Link href="/login">
 				Login
 					</Link>
 				</li>
