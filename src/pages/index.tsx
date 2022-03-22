@@ -7,7 +7,7 @@ import { Navigation } from '@Components';
 import type { TypographyProps } from 'antd';
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const Home: NextPage = (): JSX.Element => {
 	const { Paragraph, Title }: Pick<TypographyProps, 'Paragraph'|'Title'> = Typography;
 
 	return (
