@@ -34,6 +34,9 @@ const Home: NextPage = () => {
 						</Col>
 						<Col span={20} className="">
 							<Title level={3}>Lend a book</Title>
+							<Paragraph>
+								Not ready to buy a book? Lend a book easily from it&rsquo;s owner seamlessly.
+							</Paragraph>
 						</Col>
 					</Row>
 					<Row gutter={[ 20, 20 ]}>
@@ -42,6 +45,11 @@ const Home: NextPage = () => {
 						</Col>
 						<Col span={20} className="">
 							<Title level={3}>Purchase a used copy</Title>
+							<Paragraph>
+								You may consider getting a new book to be expensive for your pocket and the environment.
+								Purchase used books in good condition and enjoy the savings:
+								to your pocket and to the environment.
+							</Paragraph>
 						</Col>
 					</Row>
 				</Space>
