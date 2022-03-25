@@ -2,6 +2,10 @@ import { render } from "@testing-library/react";
 
 import { Navigation } from "./Navigation";
 
-it("renders without crashing", () => {
-	render(<Navigation/>);
+describe("navigation", () => {
+	it("renders without crashing", () => {
+		const { getByRole } = render(<Navigation/>);
+		expect(getByRole("navigation")).toBeDefined();
+	});
+
 });
