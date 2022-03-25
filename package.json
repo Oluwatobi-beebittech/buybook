@@ -9,7 +9,8 @@
     "lint": "next lint --fix",
     "prepare": "husky install",
     "cypress": "cypress open",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "test-ci": "jest"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",

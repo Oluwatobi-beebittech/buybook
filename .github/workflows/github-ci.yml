@@ -9,7 +9,7 @@ on:
     branches:
       - main
 jobs:
-    js-lint:
+    js-pipeline:
         runs-on: ubuntu-latest
         steps:
           - name: Checkout Code
@@ -26,8 +26,11 @@ jobs:
           - name: Run linter
             run: npm run lint
 
+          - name: Run unit tests
+            run: npm run test-ci
+
     deploy-vercel: 
-      needs: js-lint
+      needs: js-pipeline
       runs-on: ubuntu-latest
       if: github.event.pull_request.merged == true
       steps:
