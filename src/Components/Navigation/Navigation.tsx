@@ -7,7 +7,7 @@ export const Navigation: React.FC = (): JSX.Element => {
 	const menuOptions = { fontSize: '24px', color: '#FFFFFF' };
 
 	return (
-		<nav className = "nav">
+		<nav className = "nav" role="navigation">
 			<span className="nav__header">Buy Book</span>
 			<ul className = {`nav__links--${isMenuOpen ? 'opened' : 'closed'}`}>
 				<li className="nav__link">
