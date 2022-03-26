@@ -1,14 +1,7 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import * as React from "react";
 
-import type { LinkProps } from "next/link";
-
 import { Navigation } from "./Navigation";
-
-jest.mock("next/link", () => (
-	{ children }: React.PropsWithChildren<LinkProps>
-)=> children
-);
 
 describe("navigation", () => {
 	beforeAll(() => {
@@ -24,13 +17,18 @@ describe("navigation", () => {
 		expect(navigationBar).toBeDefined();
 	});
 
-	test("links in navigation are present and clickable", () => {
+	test("links in navigation are present and have href attributes", () => {
 		const aboutLink = screen.getByText("About");
 		const loginLink = screen.getByText("Login");
 		const registerLink = screen.getByText("Register");
 
 		expect(aboutLink).toBeInTheDocument();
+		expect(aboutLink).toHaveAttribute("href", "/about");
+
 		expect(loginLink).toBeInTheDocument();
+		expect(loginLink).toHaveAttribute("href", "/login");
+
 		expect(registerLink).toBeInTheDocument();
+		expect(registerLink).toHaveAttribute("href", "/register");
 	});
 });
