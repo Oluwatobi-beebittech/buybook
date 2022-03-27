@@ -26,18 +26,20 @@
   }
 
   &__card--small {
-    background-color: @green300;
-    border: 1px solid transparent;
+    background-color: @pale-white;
+    border: 1px solid @primary-color;
     border-radius: @border-radius-base;
+    height: calc(50px + 3rem);
     padding: @padding-md !important;
     text-align: center;
     .anticon {
-      color: @pale-white !important;
+      color: @primary-color !important;
       font-size: 3rem;
       transition: color 0.5s;
     }
   
     @media screen and (max-width: @mobile-breakpoint) {
+      height: calc(50px + 2rem);
       .anticon {
         font-size: 2rem;
       }

@@ -53,7 +53,7 @@ const Login: NextPage = (): JSX.Element => {
 								<Checkbox>Remember me</Checkbox>
 							</Form.Item>
 
-							<Form.Item wrapperCol={{ offset: 12, span: 16 }}>
+							<Form.Item wrapperCol={{ offset: 12, span: 3 }}>
 								<Button type="primary" htmlType="submit">
           							Submit
 								</Button>

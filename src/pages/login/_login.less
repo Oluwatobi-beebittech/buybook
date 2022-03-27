@@ -5,13 +5,17 @@
     padding-right: @page-padding;
     padding-top: calc(95px + 1rem);
     &-container {
-      background-color: @primary-color;
+      background-color: @pale-white;
+      border: 1px solid @primary-color;
       border-radius: @border-radius-base;
       height: 50vh;
       padding: @padding-lg;
       .ant-typography,
       .ant-form-item label {
-        color: @pale-white;
+        color: @primary-color;
+      }
+      h3.ant-typography:first-child {
+        margin-bottom: 3.5rem;
       }
     }
     &-row {
