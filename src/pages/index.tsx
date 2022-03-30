@@ -1,14 +1,14 @@
-import { Button, Col, Row, Space, Typography } from 'antd';
-import Head from 'next/head';
+import { Button, Col, Row, Space, Typography } from "antd";
+import Head from "next/head";
 
-import { HandCoinsIcon, ReusedBookIcon } from '@Assets';
-import { Navigation } from '@Components';
+import { HandCoinsIcon, ReusedBookIcon } from "@Assets";
+import { Navigation } from "@Components";
 
-import type { TypographyProps } from 'antd';
-import type { NextPage } from 'next';
+import type { TypographyProps } from "antd";
+import type { NextPage } from "next";
 
 const Home: NextPage = (): JSX.Element => {
-	const { Paragraph, Title }: Pick<TypographyProps, 'Paragraph'|'Title'> = Typography;
+	const { Paragraph, Title }: Pick<TypographyProps, "Paragraph"|"Title"> = Typography;
 
 	return (
 		<>
@@ -20,7 +20,7 @@ const Home: NextPage = (): JSX.Element => {
 				<Navigation/>
 			</header>
 			<main className="landing__content">
-				<Space direction="vertical" size='large' style={{ width: '100%' }}>
+				<Space direction="vertical" size='large' style={{ width: "100%" }}>
 					<Row gutter={[ 0,0 ]}>
 						<Col span={24} className="landing__card--large">
 							<Title>Get Books with Ease</Title>

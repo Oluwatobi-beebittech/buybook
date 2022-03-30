@@ -1,15 +1,15 @@
-import { CloseOutlined ,MenuOutlined } from '@ant-design/icons';
-import Link from 'next/link';
-import * as React from 'react';
+import { CloseOutlined ,MenuOutlined } from "@ant-design/icons";
+import Link from "next/link";
+import * as React from "react";
 
 export const Navigation: React.FC = (): JSX.Element => {
 	const [ isMenuOpen, setMenuOpen ] = React.useState<boolean>(false);
-	const menuOptions = { fontSize: '24px', color: '#FFFFFF' };
+	const menuOptions = { fontSize: "24px", color: "#FFFFFF" };
 
 	return (
 		<nav className = "nav" role="navigation">
 			<span className="nav__header">Buy Book</span>
-			<ul className = {`nav__links--${isMenuOpen ? 'opened' : 'closed'}`}>
+			<ul className = {`nav__links--${isMenuOpen ? "opened" : "closed"}`}>
 				<li className="nav__link">
 					<Link href="/about">
 						<a>	About</a>

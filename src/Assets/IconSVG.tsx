@@ -1,7 +1,7 @@
-import Icon from '@ant-design/icons';
-import * as React from 'react';
+import Icon from "@ant-design/icons";
+import * as React from "react";
 
-import type { IconComponentProps } from '@ant-design/icons/lib/components/Icon';
+import type { IconComponentProps } from "@ant-design/icons/lib/components/Icon";
 
 const HandCoinsSVG: React.FC = (): JSX.Element => (
 	<svg
