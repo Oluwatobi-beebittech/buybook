@@ -78,6 +78,7 @@
     "padding-line-between-statements": "off",
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
+    "quotes": ["error", "double",  { "allowTemplateLiterals": true }],
     "semi": ["error", "always"]
   }
 }
