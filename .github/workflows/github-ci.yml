@@ -28,6 +28,12 @@ jobs:
 
           - name: Run unit tests
             run: npm run test-ci
+          
+          - name: Run E2E tests
+            uses: cypress-io/github-action@v2
+            with:
+              start: yarn start
+              wait-on: 'http://localhost:3000'
 
     deploy-vercel: 
       needs: js-pipeline

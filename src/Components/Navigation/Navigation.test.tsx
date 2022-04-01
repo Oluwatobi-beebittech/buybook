@@ -1,9 +1,9 @@
-import { cleanup, render, screen } from "@testing-library/react";
-import * as React from "react";
+import { cleanup, render, screen } from '@testing-library/react';
+import * as React from 'react';
 
-import { Navigation } from "./Navigation";
+import { Navigation } from './Navigation';
 
-describe("navigation", () => {
+describe('navigation', () => {
 	beforeAll(() => {
 		render(<Navigation/>);
 	});
@@ -12,23 +12,23 @@ describe("navigation", () => {
 		cleanup();
 	});
 
-	it("renders without crashing", () => {
-		const navigationBar = screen.getByRole("navigation");
+	it('renders without crashing', () => {
+		const navigationBar = screen.getByRole('navigation');
 		expect(navigationBar).toBeDefined();
 	});
 
-	test("links in navigation are present and have href attributes", () => {
-		const aboutLink = screen.getByText("About");
-		const loginLink = screen.getByText("Login");
-		const registerLink = screen.getByText("Register");
+	test('links in navigation are present and have href attributes', () => {
+		const aboutLink = screen.getByText('About');
+		const loginLink = screen.getByText('Login');
+		const registerLink = screen.getByText('Register');
 
 		expect(aboutLink).toBeInTheDocument();
-		expect(aboutLink).toHaveAttribute("href", "/about");
+		expect(aboutLink).toHaveAttribute('href', '/about');
 
 		expect(loginLink).toBeInTheDocument();
-		expect(loginLink).toHaveAttribute("href", "/login");
+		expect(loginLink).toHaveAttribute('href', '/login');
 
 		expect(registerLink).toBeInTheDocument();
-		expect(registerLink).toHaveAttribute("href", "/register");
+		expect(registerLink).toHaveAttribute('href', '/register');
 	});
 });

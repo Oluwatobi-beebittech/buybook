@@ -1,15 +1,15 @@
-import { LoginOutlined , UserOutlined, LockOutlined } from "@ant-design/icons";
-import {  Button, Checkbox, Col ,Form, Input, Row, Typography } from "antd";
-import Head from "next/head";
-import * as React from "react";
+import { LoginOutlined , UserOutlined, LockOutlined } from '@ant-design/icons';
+import {  Button, Checkbox, Col ,Form, Input, Row, Typography } from 'antd';
+import Head from 'next/head';
+import * as React from 'react';
 
-import { Navigation } from "@Components";
+import { Navigation } from '@Components';
 
-import type { TypographyProps } from "antd";
-import type { NextPage } from "next";
+import type { TypographyProps } from 'antd';
+import type { NextPage } from 'next';
 
 const Login: NextPage = (): JSX.Element => {
-	const { Title }: Pick<TypographyProps, "Title"> = Typography;
+	const { Title }: Pick<TypographyProps, 'Title'> = Typography;
 
 	return (
 		<>
@@ -37,16 +37,16 @@ const Login: NextPage = (): JSX.Element => {
 							<Form.Item
 								label="Email"
 								name="email"
-								rules={[ { required: true, message: "Please input your email!", whitespace: true } ]}
+								rules={[ { required: true, message: 'Please input your email!', whitespace: true } ]}
 							>
-								<Input prefix={<UserOutlined style={{ color: "#8c8c8c" }} />} placeholder="Email" size="large"/>
+								<Input prefix={<UserOutlined style={{ color: '#8c8c8c' }} />} placeholder="Email" size="large"/>
 							</Form.Item>
 							<Form.Item
 								label="Password"
 								name="password"
-								rules={[ { required: true, message: "Please input your password!" } ]}
+								rules={[ { required: true, message: 'Please input your password!' } ]}
 							>
-								<Input.Password prefix={<LockOutlined style={{ color: "#8c8c8c" }}/>}  placeholder="Password" size="large"/>
+								<Input.Password prefix={<LockOutlined style={{ color: '#8c8c8c' }}/>}  placeholder="Password" size="large"/>
 							</Form.Item>
 							<Form.Item name="remember" valuePropName="checked" wrapperCol={{ offset: 6, span: 16 }}>
 								<Checkbox>Remember me</Checkbox>
