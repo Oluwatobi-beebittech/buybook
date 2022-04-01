@@ -1,5 +1,5 @@
 describe('Renders the index page', () => {
-	it('should navigate to login page', () => {
+	it('should navigate to pages on the landing screen', () => {
 		cy.visit('http://localhost:3000/');
 
 		cy.get('a[href*="login"]').click();
