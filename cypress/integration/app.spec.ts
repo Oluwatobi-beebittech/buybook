@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+// @ts-check
 describe('Renders the index page', () => {
 	it('should navigate to pages on the landing screen', () => {
 		cy.visit('/');
