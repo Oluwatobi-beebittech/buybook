@@ -1,0 +1,29 @@
+.register {
+    &__content {
+      height: 100vh;
+      padding-left: @page-padding;
+      padding-right: @page-padding;
+      padding-top: calc(95px + 1rem);
+      &-container {
+        background-color: @pale-white;
+        border: 1px solid @primary-color;
+        border-radius: @border-radius-base;
+        height: 80vh;
+        padding: @padding-lg;
+        .ant-typography,
+        .ant-form-item label {
+          color: @primary-color;
+        }
+        h3.ant-typography:first-child {
+          margin-bottom: 3.5rem;
+          @media only screen and (max-width: @mobile-breakpoint){
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      &-row {
+        height: calc(100vh - (95px + 1rem));
+      }
+    }
+  }
+  
