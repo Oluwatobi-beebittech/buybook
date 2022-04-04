@@ -38,3 +38,6 @@ describe('Register page', () => {
 			.contains('The two passwords that you entered do not match!');
 	});
 });
+
+const asModule = {};
+export default asModule;
