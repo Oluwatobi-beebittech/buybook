@@ -1,7 +1,7 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import * as React from 'react';
 
-import { Navigation } from './Navigation';
+import { Navigation } from '@Components';
 
 describe('navigation', () => {
 	beforeAll(() => {
