@@ -1,8 +1,8 @@
 import { Button, Col, Row, Space, Typography } from 'antd';
 import Head from 'next/head';
 
-import { HandCoinsIcon, ReusedBookIcon } from '@Assets';
-import { Navigation } from '@Components';
+import { HandCoinsIcon, ReusedBookIcon } from '@assets';
+import { Navigation } from '@components';
 
 import type { TypographyProps } from 'antd';
 import type { NextPage } from 'next';
