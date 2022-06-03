@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import * as React from 'react';
 
-import { Navigation } from '@Components';
+import { Navigation } from '@components';
 
 import type { NextPage } from 'next';
 

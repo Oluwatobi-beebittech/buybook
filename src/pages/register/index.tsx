@@ -3,7 +3,7 @@ import {  Button, Checkbox, Col ,Form, Input, Row, Select, Typography } from 'an
 import Head from 'next/head';
 import * as React from 'react';
 
-import { Navigation } from '@Components';
+import { Navigation } from '@components';
 
 import type { TypographyProps } from 'antd';
 import type { NextPage } from 'next';
