@@ -9,7 +9,7 @@ const customJestConfig = {
 	setupFilesAfterEnv: ['./src/jest-setup.ts'],
 	testEnvironment: 'jest-environment-jsdom',
 	moduleNameMapper: {
-		"@components": "<rootDir>/src/components"
+		"@components": "<rootDir>/src/components/index.ts"
 	},
 	modulePathIgnorePatterns: ['cypress', './tests/e2e'],
 };
