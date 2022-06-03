@@ -1,6 +1,6 @@
 .nav {
   align-items: center;
-  background-color: @green500;
+  background-color: @white;
   display: flex;
   justify-content: space-between;
   padding: 20px 5%;
@@ -9,7 +9,7 @@
   width: 100%;
 
   &__header {
-    color: @white;
+    color: @black;
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0.5em;
@@ -18,11 +18,11 @@
 
   &__link {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 14px;
     padding: 0 50px;
     
     a {
-      color: @pale-white;
+      color: @black;
       position: relative;
       &::before {
         content: "";
@@ -33,12 +33,12 @@
         margin-top: 2px;
         bottom: 0;
         left: 0;
-        background-color: @pale-white100;
+        background-color: @black;
         transform: scaleX(0);
         transition: transform 0.3s ease;
       }
       &:hover {
-        color: @pale-white100;
+        color: @black;
         &::before {
           transform: scaleX(1);
         }
